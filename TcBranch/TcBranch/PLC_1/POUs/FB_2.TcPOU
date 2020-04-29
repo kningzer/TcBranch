@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FB_2" Id="{9a850f11-b9b5-4216-a17a-e752cb2cd96f}" SpecialFunc="None">
+    <Declaration><![CDATA[//Multiply
+FUNCTION_BLOCK FB_2
+VAR_INPUT
+	nIn1:		INT;
+	nIn2:		INT;
+END_VAR
+VAR_OUTPUT
+	nOut1:		INT;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[nOut1:=nIn1*nIn2;]]></ST>
+    </Implementation>
+    <LineIds Name="FB_2">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

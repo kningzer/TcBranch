@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="MAIN" Id="{00c6e621-0101-4866-bc50-1b8a8f77f956}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbAdd:		FB_1;
+	fbMult:		FB_2;
+	
+	nResult1:		INT;
+	nResult2:		INT;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbAdd(nIn1:=10,
+	  nIn2:=20,
+	  nOut1=>nResult1);
+	  
+fbMult(nIn1:=10,
+	  nIn2:=20,
+	  nOut1=>nResult1);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="12" Count="2" />
+      <LineId Id="16" Count="1" />
+      <LineId Id="15" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
