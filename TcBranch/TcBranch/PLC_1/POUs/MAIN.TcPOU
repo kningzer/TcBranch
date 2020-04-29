@@ -18,7 +18,7 @@ END_VAR
 	  
 fbMult(nIn1:=10,
 	  nIn2:=20,
-	  nOut1=>nResult1);]]></ST>
+	  nOut1=>nResult2);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
