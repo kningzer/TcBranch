@@ -21,7 +21,7 @@ END_VAR
 	  
 fbMult(nIn1:=10,
 	  nIn2:=20,
-	  nOut1=>nResult1);
+	  nOut1=>nResult2);
 	  
 //New cool divide function
 fbDiv(nDivIn1:=20,
