@@ -6,9 +6,12 @@ VAR
 	fbAdd:		FB_1;
 	fbMult:		FB_2;
 	
+	//New Fb
+	fbDiv:		FB_Divide;
+	
 	nResult1:		INT;
 	nResult2:		INT;
-	
+	nResult3:		INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -18,13 +21,19 @@ END_VAR
 	  
 fbMult(nIn1:=10,
 	  nIn2:=20,
-	  nOut1=>nResult1);]]></ST>
+	  nOut1=>nResult1);
+	  
+//New cool divide function
+fbDiv(nDivIn1:=20,
+	  nDivIn2:=10,
+	  nDivOut=>nResult3);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
       <LineId Id="12" Count="2" />
       <LineId Id="16" Count="1" />
       <LineId Id="15" Count="0" />
+      <LineId Id="22" Count="4" />
     </LineIds>
   </POU>
 </TcPlcObject>

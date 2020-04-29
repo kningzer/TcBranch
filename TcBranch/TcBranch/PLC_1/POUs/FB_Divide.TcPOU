@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FB_Divide" Id="{046f7d88-e44d-4d9d-8555-4308ed1dbdef}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Divide
+VAR_INPUT
+	nDivIn1:		INT;
+	nDivIn2:		INT;
+END_VAR
+VAR_OUTPUT
+	nDivOut:		INT;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[nDivOut:= nDivIn1 / nDivIn2;
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Divide">
+      <LineId Id="9" Count="0" />
+      <LineId Id="15" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
