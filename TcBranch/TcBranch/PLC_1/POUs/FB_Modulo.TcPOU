@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FB_Modulo" Id="{5154f507-5910-41fc-ab44-378a007bd29c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Modulo
+VAR_INPUT
+	fModIn1:		INT;
+	fModIn2:		INT;
+END_VAR
+VAR_OUTPUT
+	fModOut:	INT;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fModOut:= fModIn1 MOD fModIn2;]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Modulo">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
